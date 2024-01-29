@@ -34,12 +34,12 @@
                           <td>@dealer.Description</td>
                     <td>
                         <form asp-action="Edit" asp-route-id="@dealer.ID" method="get">
-                            <button type="submit" class="btn btn-secondary">EDIT</button>
+                            <button id="edit" type="submit" class="btn btn-secondary">EDIT</button>
                         </form>
                           </td>
                           <td>
                         <form asp-action="Delete" asp-route-id="@dealer.ID" method="post">
-                            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                            <button  id="delete" type="submit" class="btn btn-sm btn-danger">Delete</button>
                         </form>
                     </td>
                 </tr>
